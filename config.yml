@@ -1,0 +1,16 @@
+title: Hitung Luas
+description: Jsndn
+template:
+  repo: hitung-luas-template
+  name: hitung-luas
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
